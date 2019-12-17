@@ -5,15 +5,15 @@ import 'reducer.dart';
 import 'state.dart';
 import 'view.dart';
 
-class EntrancePage extends Page<EntranceState, Map<String, dynamic>> {
-  EntrancePage()
+class GridPage extends Page<GridState, Map<String, dynamic>> {
+  GridPage()
       : super(
           initState: initState,
           effect: buildEffect(),
           reducer: buildReducer(),
           view: buildView,
-          dependencies: Dependencies<EntranceState>(
-              adapter: null, slots: <String, Dependent<EntranceState>>{}),
-          middleware: <Middleware<EntranceState>>[],
+          dependencies: Dependencies<GridState>(
+              adapter: null, slots: <String, Dependent<GridState>>{}),
+          middleware: <Middleware<GridState>>[],
         );
 }

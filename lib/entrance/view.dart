@@ -1,5 +1,6 @@
 import 'package:fish_redux/fish_redux.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_listview_test/entrance/action.dart';
 
 import 'state.dart';
 
@@ -19,7 +20,9 @@ Widget buildView(
             '进入',
             style: TextStyle(color: Colors.white),
           ),
-          onPressed: () {},
+          onPressed: () {
+            dispatch(EntranceActionCreator.onOpenGrid());
+          },
         ),
       ),
     ),
